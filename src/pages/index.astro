@@ -1,136 +1,260 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import TopAppBar from '../components/TopAppBar.astro';
-import Footer from '../components/Footer.astro';
+import Layout from "../layouts/Layout.astro";
+import TopAppBar from "../components/TopAppBar.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Nelsibeth Oliva - Architecting Odoo Solutions">
     <TopAppBar />
-    
+
     <main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
         <!-- Hero Section -->
         <section class="grid lg:grid-cols-12 gap-12 items-center mb-32">
             <div class="lg:col-span-7">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/15 mb-6">
-                    <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-                    <span class="text-xs font-label uppercase tracking-widest text-primary">Disponible para Proyectos</span>
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/15 mb-6"
+                >
+                    <span class="w-2 h-2 rounded-full bg-primary animate-pulse"
+                    ></span>
+                    <span
+                        class="text-xs font-label uppercase tracking-widest text-primary"
+                        >Disponible para Proyectos</span
+                    >
                 </div>
-                <h1 class="font-headline text-6xl lg:text-8xl font-bold tracking-tighter mb-6 leading-tight">
-                    Arquitecto de Soluciones <span class="hero-gradient bg-clip-text text-transparent">Odoo</span>.
+                <h1
+                    class="font-headline text-6xl lg:text-8xl font-bold tracking-tighter mb-6 leading-tight"
+                >
+                    Arquitecto de Soluciones <span
+                        class="hero-gradient bg-clip-text text-transparent"
+                        >Odoo</span
+                    >.
                 </h1>
-                <p class="text-xl text-on-surface-variant max-w-2xl mb-10 leading-relaxed font-body">
-                    Desarrollador Técnico Sr. especializado en implementaciones de Odoo a medida, automatización con Python y estructuras de bases de datos PostgreSQL escalables.
+                <p
+                    class="text-xl text-on-surface-variant max-w-2xl mb-10 leading-relaxed font-body"
+                >
+                    Desarrollador Técnico Sr. especializado en implementaciones
+                    de Odoo a medida, automatización con Python y estructuras de
+                    bases de datos PostgreSQL escalables.
                 </p>
                 <div class="flex flex-wrap gap-4 font-headline">
-                    <button class="hero-gradient text-on-primary font-bold px-8 py-4 rounded-xl flex items-center gap-2 group transition-all">
-                        Hablemos 
-                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" translate="no">arrow_forward</span>
+                    <button
+                        class="hero-gradient text-on-primary font-bold px-8 py-4 rounded-xl flex items-center gap-2 group transition-all"
+                    >
+                        Hablemos
+                        <span
+                            class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
+                            translate="no">arrow_forward</span
+                        >
                     </button>
-                    <button class="px-8 py-4 rounded-xl border border-outline-variant/30 text-on-surface hover:bg-surface-container transition-colors">
+                    <button
+                        class="px-8 py-4 rounded-xl border border-outline-variant/30 text-on-surface hover:bg-surface-container transition-colors"
+                    >
                         Ver Casos de Estudio Técnicos
                     </button>
                 </div>
             </div>
-            
+
             <div class="lg:col-span-5 relative">
-                <div class="aspect-square relative rounded-[2rem] overflow-hidden group">
-                    <img 
-                        alt="Nelsibeth Oliva" 
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                        data-alt="Professional studio portrait of a confident developer with vibrant blue hair highlights, dramatic cinematic lighting, deep sapphire background" 
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD47BwGGyAJCXoemPsEvaXiqUIL9XSxvPC30av2nquJo413Hbt0CSbqTqaOO7K4cGcbD2QWQamrooVbuWzAukG1hH_8CBIp2-ZFYS0O0QV-xnY6ThfZQRvJPVqauJCuqSglwvnPa2Jjy43P8BB2g5vwvd7wtMfE1XI0eDgEQUZ8Yf6ztxg18mz0xD00xFde414jD2aQXLecVHcmCebN0U8cplafP94xnOX1P7TNzdZC-pyloit8uqU77DyE1UhD6FVzt27ECYMBeBd1"
+                <div
+                    class="aspect-square relative rounded-[2rem] overflow-hidden group"
+                >
+                    <img
+                        alt="Nelsibeth Oliva - Pixel Art"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        src="/profile.png"
                     />
-                    <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60"></div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60"
+                    >
+                    </div>
                 </div>
-                
-                <!-- Floating Card -->
-                <div class="absolute -bottom-6 -left-6 p-6 bg-surface-container-high/80 backdrop-blur-xl border border-outline-variant/15 rounded-2xl shadow-2xl max-w-xs xl:left-[-2rem]">
-                    <div class="flex items-center gap-4 mb-3">
-                        <div class="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center">
-                            <span class="material-symbols-outlined text-primary" translate="no" data-weight="fill">terminal</span>
+
+                <!-- GitHub Floating Card -->
+                <a
+                    href="https://github.com/nelsibeth"
+                    target="_blank"
+                    class="absolute -bottom-6 -left-6 p-6 bg-surface-container-high/80 backdrop-blur-xl border border-outline-variant/15 rounded-2xl shadow-2xl max-w-xs xl:left-[-2rem] group hover:scale-105 transition-all"
+                >
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors"
+                        >
+                            <svg
+                                class="w-6 h-6 fill-primary"
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                                ><path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                                ></path></svg
+                            >
                         </div>
                         <div>
-                            <p class="text-xs font-label text-slate-500 uppercase tracking-tighter">Estado del Stack</p>
-                            <p class="text-sm font-bold text-on-surface font-headline">Certificado V17</p>
+                            <p
+                                class="text-[10px] font-label text-slate-500 uppercase tracking-widest leading-none mb-1"
+                            >
+                                GitHub
+                            </p>
+                            <p
+                                class="text-sm font-bold text-on-surface font-headline leading-none"
+                            >
+                                @nelsibeth
+                            </p>
                         </div>
                     </div>
-                    <div class="h-1.5 w-full bg-surface-container rounded-full overflow-hidden">
-                        <div class="h-full w-[95%] hero-gradient"></div>
-                    </div>
-                </div>
+                </a>
             </div>
         </section>
 
         <!-- Professional Summary & Expertise -->
         <section class="grid md:grid-cols-2 gap-24 items-start mb-32">
             <div>
-                <h2 class="font-headline text-3xl font-bold mb-8 flex items-center gap-4">
-                    Resumen Profesional
+                <h2
+                    class="font-headline text-3xl font-bold mb-8 flex items-center gap-4"
+                >
+                    Resumen
                     <span class="h-px flex-1 bg-outline-variant/15"></span>
                 </h2>
-                <div class="space-y-6 text-on-surface-variant leading-relaxed text-lg font-body">
+                <div
+                    class="space-y-6 text-on-surface-variant leading-relaxed text-lg font-body"
+                >
                     <p>
-                        Con más de 6 años de experiencia enfocada en el <span class="text-primary font-semibold">ecosistema Odoo</span>, cierro la brecha entre los requisitos comerciales complejos y la arquitectura técnica de alto rendimiento.
+                        Con más de 6 años de experiencia enfocada en el <span
+                            class="text-primary font-semibold"
+                            >ecosistema Odoo</span
+                        >, cierro la brecha entre los requisitos comerciales
+                        complejos y la arquitectura técnica de alto rendimiento.
                     </p>
                     <p>
-                        Mi enfoque prioriza la mantenibilidad y la escalabilidad, asegurando que los módulos personalizados se integren sin problemas con el núcleo de Odoo mientras brindan la flexibilidad necesaria para los flujos de trabajo empresariales en evolución.
+                        Mi enfoque prioriza la mantenibilidad y la
+                        escalabilidad, asegurando que los módulos personalizados
+                        se integren sin problemas con el núcleo de Odoo mientras
+                        brindan la flexibilidad necesaria para los flujos de
+                        trabajo empresariales en evolución.
                     </p>
                 </div>
             </div>
-            
+
             <div>
-                <h2 class="font-headline text-3xl font-bold mb-8 flex items-center gap-4">
+                <h2
+                    class="font-headline text-3xl font-bold mb-8 flex items-center gap-4"
+                >
                     Experticia Principal
                     <span class="h-px flex-1 bg-outline-variant/15"></span>
                 </h2>
-                
+
                 <!-- Bento Grid Style Expertise -->
                 <div class="grid grid-cols-2 gap-4">
-                    <div class="col-span-2 p-6 rounded-2xl bg-surface-container-low border border-outline-variant/10 hover:bg-surface-container transition-colors group">
+                    <div
+                        class="col-span-2 p-6 rounded-2xl bg-surface-container-low border border-outline-variant/10 hover:bg-surface-container transition-colors group"
+                    >
                         <div class="flex items-center justify-between mb-4">
-                            <span class="material-symbols-outlined text-primary text-3xl" translate="no" data-weight="fill">rocket_launch</span>
-                            <span class="text-xs font-label text-slate-500">Dominio</span>
+                            <span
+                                class="material-symbols-outlined text-primary text-3xl"
+                                translate="no"
+                                data-weight="fill">rocket_launch</span
+                            >
+                            <span class="text-xs font-label text-slate-500"
+                                >Dominio</span
+                            >
                         </div>
-                        <h3 class="font-headline font-bold text-xl mb-1">Odoo Enterprise</h3>
-                        <p class="text-sm text-on-surface-variant font-body">Experto en el framework, especialista en ORM y personalizador de UI/UX para diversos sectores industriales.</p>
+                        <h3 class="font-headline font-bold text-xl mb-1">
+                            Odoo Enterprise
+                        </h3>
+                        <p class="text-sm text-on-surface-variant font-body">
+                            Experto en el framework, especialista en ORM y
+                            personalizador de UI/UX para diversos sectores
+                            industriales.
+                        </p>
                     </div>
-                    
-                    <div class="p-6 rounded-2xl bg-surface-container-low border border-outline-variant/10 hover:bg-surface-container transition-colors">
-                        <div class="w-10 h-10 rounded-lg bg-surface-variant flex items-center justify-center mb-4">
-                            <span class="material-symbols-outlined text-primary" translate="no" data-weight="fill">code</span>
+
+                    <div
+                        class="p-6 rounded-2xl bg-surface-container-low border border-outline-variant/10 hover:bg-surface-container transition-colors"
+                    >
+                        <div
+                            class="w-10 h-10 rounded-lg bg-surface-variant flex items-center justify-center mb-4"
+                        >
+                            <span
+                                class="material-symbols-outlined text-primary"
+                                translate="no"
+                                data-weight="fill">code</span
+                            >
                         </div>
-                        <h3 class="font-headline font-bold text-lg mb-1">Python</h3>
-                        <p class="text-xs text-on-surface-variant font-body">Lógica de backend, scripts de automatización e integraciones de alto nivel.</p>
+                        <h3 class="font-headline font-bold text-lg mb-1">
+                            Python
+                        </h3>
+                        <p class="text-xs text-on-surface-variant font-body">
+                            Lógica de backend, scripts de automatización e
+                            integraciones de alto nivel.
+                        </p>
                     </div>
-                    
-                    <div class="p-6 rounded-2xl bg-surface-container-low border border-outline-variant/10 hover:bg-surface-container transition-colors">
-                        <div class="w-10 h-10 rounded-lg bg-surface-variant flex items-center justify-center mb-4">
-                            <span class="material-symbols-outlined text-primary" translate="no" data-weight="fill">database</span>
+
+                    <div
+                        class="p-6 rounded-2xl bg-surface-container-low border border-outline-variant/10 hover:bg-surface-container transition-colors"
+                    >
+                        <div
+                            class="w-10 h-10 rounded-lg bg-surface-variant flex items-center justify-center mb-4"
+                        >
+                            <span
+                                class="material-symbols-outlined text-primary"
+                                translate="no"
+                                data-weight="fill">database</span
+                            >
                         </div>
-                        <h3 class="font-headline font-bold text-lg mb-1">PostgreSQL</h3>
-                        <p class="text-xs text-on-surface-variant font-body">Consultas avanzadas, optimización de bases de datos y gestión de migraciones.</p>
+                        <h3 class="font-headline font-bold text-lg mb-1">
+                            PostgreSQL
+                        </h3>
+                        <p class="text-xs text-on-surface-variant font-body">
+                            Consultas avanzadas, optimización de bases de datos
+                            y gestión de migraciones.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Stats / Proof Points -->
-        <section class="grid grid-cols-2 md:grid-cols-4 gap-8 py-16 border-y border-outline-variant/10">
+        <section
+            class="grid grid-cols-2 md:grid-cols-4 gap-8 py-16 border-y border-outline-variant/10"
+        >
             <div class="text-center">
-                <p class="text-4xl font-headline font-black text-primary mb-1">45+</p>
-                <p class="text-xs font-label uppercase tracking-widest text-slate-500">Módulos Desplegados</p>
+                <p class="text-4xl font-headline font-black text-primary mb-1">
+                    45+
+                </p>
+                <p
+                    class="text-xs font-label uppercase tracking-widest text-slate-500"
+                >
+                    Módulos Desplegados
+                </p>
             </div>
             <div class="text-center">
-                <p class="text-4xl font-headline font-black text-primary mb-1">12</p>
-                <p class="text-xs font-label uppercase tracking-widest text-slate-500">Migraciones Globales</p>
+                <p class="text-4xl font-headline font-black text-primary mb-1">
+                    12
+                </p>
+                <p
+                    class="text-xs font-label uppercase tracking-widest text-slate-500"
+                >
+                    Migraciones Globales
+                </p>
             </div>
             <div class="text-center">
-                <p class="text-4xl font-headline font-black text-primary mb-1">98%</p>
-                <p class="text-xs font-label uppercase tracking-widest text-slate-500">Récord de Uptime</p>
+                <p class="text-4xl font-headline font-black text-primary mb-1">
+                    98%
+                </p>
+                <p
+                    class="text-xs font-label uppercase tracking-widest text-slate-500"
+                >
+                    Récord de Uptime
+                </p>
             </div>
             <div class="text-center">
-                <p class="text-4xl font-headline font-black text-primary mb-1">6años</p>
-                <p class="text-xs font-label uppercase tracking-widest text-slate-500">Liderazgo Técnico</p>
+                <p class="text-4xl font-headline font-black text-primary mb-1">
+                    6años
+                </p>
+                <p
+                    class="text-xs font-label uppercase tracking-widest text-slate-500"
+                >
+                    Liderazgo Técnico
+                </p>
             </div>
         </section>
     </main>
