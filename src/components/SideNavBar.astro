@@ -15,25 +15,25 @@ const currentPath = pathname.slice(1);
     
     <nav class="flex-1 space-y-2">
         <a href="/" class={`flex items-center gap-3 px-4 py-3 rounded-r-full group transition-all ${currentPath === '' ? 'bg-sky-400/10 text-sky-400 font-bold' : 'text-slate-400 hover:bg-[#002237]'}`}>
-            <span class={`material-symbols-outlined ${currentPath === '' ? 'text-primary' : ''}`} data-icon="work">work</span>
-            <span class="font-headline">Experience</span>
+            <span class={`material-symbols-outlined ${currentPath === '' ? 'text-primary' : ''}`} translate="no" data-icon="work">work</span>
+            <span class="font-headline">Experiencia</span>
         </a>
         <a href="/projects" class={`flex items-center gap-3 px-4 py-3 rounded-r-full group transition-all ${currentPath === 'projects' ? 'bg-sky-400/10 text-sky-400 font-bold' : 'text-slate-400 hover:bg-[#002237]'}`}>
-            <span class={`material-symbols-outlined ${currentPath === 'projects' ? 'text-primary' : ''}`} data-icon="terminal">terminal</span>
-            <span class="font-headline">Projects</span>
+            <span class={`material-symbols-outlined ${currentPath === 'projects' ? 'text-primary' : ''}`} translate="no" data-icon="terminal">terminal</span>
+            <span class="font-headline">Proyectos</span>
         </a>
         <a href="#" class="flex items-center gap-3 px-4 py-3 text-slate-400 hover:bg-[#002237] transition-all rounded-r-full group">
-            <span class="material-symbols-outlined" data-icon="layers">layers</span>
+            <span class="material-symbols-outlined" translate="no" data-icon="layers">layers</span>
             <span class="font-headline">Stack</span>
         </a>
         <a href="/contact" class={`flex items-center gap-3 px-4 py-3 rounded-r-full group transition-all ${currentPath === 'contact' ? 'bg-sky-400/10 text-sky-400 font-bold' : 'text-slate-400 hover:bg-[#002237]'}`}>
-            <span class={`material-symbols-outlined ${currentPath === 'contact' ? 'text-primary' : ''}`} data-icon="mail">mail</span>
-            <span class="font-headline">Contact</span>
+            <span class={`material-symbols-outlined ${currentPath === 'contact' ? 'text-primary' : ''}`} translate="no" data-icon="mail">mail</span>
+            <span class="font-headline">Contacto</span>
         </a>
     </nav>
     <div class="p-8 mt-auto">
         <button class="w-full py-3 primary-gradient text-on-primary font-bold rounded-xl text-sm transition-all hover:scale-[0.98] font-headline">
-            Hire Me
+            Contrátame
         </button>
     </div>
 </aside>
