@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Projects | Nelsibeth Oliva - Odoo Developer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#7bd1fa",
+                        "outline": "#567997",
+                        "on-primary-fixed": "#00121d",
+                        "surface-container-lowest": "#000000",
+                        "secondary-dim": "#cad5ed",
+                        "on-secondary-fixed-variant": "#515c70",
+                        "inverse-on-surface": "#345875",
+                        "error-dim": "#d7383b",
+                        "error": "#ff716c",
+                        "primary-container": "#22b1ec",
+                        "on-tertiary-fixed-variant": "#004f69",
+                        "on-background": "#d1e8ff",
+                        "on-tertiary-container": "#00465d",
+                        "tertiary": "#9bddff",
+                        "tertiary-container": "#7bd1fa",
+                        "inverse-surface": "#f7f9ff",
+                        "inverse-primary": "#00668b",
+                        "on-surface": "#d1e8ff",
+                        "surface-container-highest": "#002840",
+                        "surface-tint": "#3bbffa",
+                        "on-secondary-fixed": "#354053",
+                        "on-primary-container": "#002b3d",
+                        "surface-bright": "#002f4a",
+                        "on-primary": "#00374d",
+                        "error-container": "#9f0519",
+                        "on-secondary-container": "#c5d1e8",
+                        "surface-variant": "#002840",
+                        "on-tertiary-fixed": "#003041",
+                        "on-primary-fixed-variant": "#003a50",
+                        "background": "#00101d",
+                        "primary-fixed": "#2db7f2",
+                        "secondary-fixed": "#d8e3fb",
+                        "outline-variant": "#264b67",
+                        "primary": "#3bbffa",
+                        "on-secondary": "#475266",
+                        "on-error": "#490006",
+                        "primary-fixed-dim": "#05a9e3",
+                        "tertiary-fixed-dim": "#6cc3eb",
+                        "surface-dim": "#00101d",
+                        "on-surface-variant": "#8bafcf",
+                        "secondary-fixed-dim": "#cad5ed",
+                        "tertiary-dim": "#6cc3eb",
+                        "surface": "#00101d",
+                        "secondary-container": "#3c475a",
+                        "secondary": "#d8e3fb",
+                        "surface-container-high": "#002237",
+                        "primary-dim": "#05a9e3",
+                        "on-tertiary": "#004f69",
+                        "surface-container-low": "#001524",
+                        "on-error-container": "#ffa8a3",
+                        "surface-container": "#001b2e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Manrope"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #00101d;
+            color: #d1e8ff;
+        }
+        .font-space-grotesk { font-family: 'Space Grotesk', sans-serif; }
+        .font-inter { font-family: 'Inter', sans-serif; }
+        .glass-header {
+            background: rgba(0, 16, 29, 0.6);
+            backdrop-filter: blur(24px);
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #3bbffa 0%, #22b1ec 100%);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift-no-border {
+            border: none;
+        }
+    </style>
+</head>
+<body class="antialiased">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#00101d]/60 backdrop-blur-xl flex justify-between items-center px-8 py-4 max-w-7xl mx-auto left-0 right-0">
+<div class="text-xl font-bold tracking-tighter text-sky-400 font-space-grotesk">
+            Nelsibeth Oliva
+        </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-space-grotesk text-sm tracking-tight text-slate-400 hover:text-sky-300 transition-colors" href="#">Experience</a>
+<a class="font-space-grotesk text-sm tracking-tight text-sky-400 border-b-2 border-sky-400 pb-1" href="#">Projects</a>
+<a class="font-space-grotesk text-sm tracking-tight text-slate-400 hover:text-sky-300 transition-colors" href="#">Stack</a>
+<a class="font-space-grotesk text-sm tracking-tight text-slate-400 hover:text-sky-300 transition-colors" href="#">Contact</a>
+<button class="primary-gradient text-on-primary px-5 py-2 rounded-xl font-bold text-sm hover:opacity-90 transition-all">
+                Download CV
+            </button>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-primary">menu</span>
+</div>
+</nav>
+<div class="flex min-h-screen pt-20">
+<!-- SideNavBar -->
+<aside class="hidden lg:flex flex-col h-screen sticky top-0 bg-[#001524] h-full w-64 border-r border-sky-900/15 shadow-[40px_0_60px_rgba(209,232,255,0.06)] p-6">
+<div class="mb-10">
+<div class="w-16 h-16 rounded-full overflow-hidden mb-4 ring-2 ring-primary/20">
+<img class="w-full h-full object-cover" data-alt="Professional headshot of a female software developer with a modern tech aesthetic and soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZZrlcbvRm6je4K7e5Voj3b05mP0xfQwOaEAI9arU1nubHOeahayYcG8hSkcCONuBTNoQjZl96a9AlU1YdcaYbSA6jNWh2kOViFFnyFiNEYYhuP53zcvVffrRE5wz-ZouiFujThC1RZHSCS6j6RftcWHQ0V78WczfFb_5SBVjpq6x1OM5Ogkfut42Kl2TTb5UqoQB4TK98tVjofybhMmeS8juoga2r1nBztkxpLXXtqH-Ay6WYZS58TePIiHjSSqZRr1a_l6uSLNp1"/>
+</div>
+<h2 class="text-lg font-black text-sky-400 font-space-grotesk">Nelsibeth Oliva</h2>
+<p class="text-sm text-slate-400 font-label">Odoo Developer</p>
+</div>
+<nav class="flex-1 space-y-2">
+<a class="flex items-center gap-3 px-4 py-3 text-slate-400 hover:bg-[#002237] transition-all rounded-r-full group" href="#">
+<span class="material-symbols-outlined" data-icon="work">work</span>
+<span class="font-space-grotesk">Experience</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 bg-sky-400/10 text-sky-400 font-bold rounded-r-full group" href="#">
+<span class="material-symbols-outlined" data-icon="terminal">terminal</span>
+<span class="font-space-grotesk">Projects</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-400 hover:bg-[#002237] transition-all rounded-r-full group" href="#">
+<span class="material-symbols-outlined" data-icon="layers">layers</span>
+<span class="font-space-grotesk">Stack</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-400 hover:bg-[#002237] transition-all rounded-r-full group" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="font-space-grotesk">Contact</span>
+</a>
+</nav>
+<button class="mt-auto w-full primary-gradient text-on-primary py-3 rounded-xl font-bold font-space-grotesk">
+                Hire Me
+            </button>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 px-8 md:px-16 py-12 max-w-6xl mx-auto">
+<!-- Header Section -->
+<header class="mb-24">
+<h1 class="text-5xl md:text-6xl font-bold font-headline mb-6 tracking-tighter">
+                    Selected <span class="text-primary">Projects</span>
+</h1>
+<p class="text-on-surface-variant text-lg max-w-2xl leading-relaxed">
+                    Engineering scalable business architectures through Odoo. My work spans from high-impact Enterprise ERP deployments to specialized open-source modules.
+                </p>
+</header>
+<!-- Enterprise Solutions Section -->
+<section class="mb-32">
+<div class="flex items-center gap-4 mb-12">
+<span class="h-px flex-1 bg-outline-variant/15"></span>
+<h2 class="text-sm font-label uppercase tracking-widest text-primary font-bold">Enterprise Solutions</h2>
+<span class="h-px w-12 bg-outline-variant/15"></span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Project Card 1 -->
+<div class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-highest transition-all duration-300 group">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="factory">factory</span>
+<span class="text-xs font-label bg-primary/10 text-primary px-3 py-1 rounded-full">v16 Enterprise</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-2 group-hover:text-primary transition-colors">Global Logistics ERP</h3>
+<p class="text-sm text-sky-300/80 mb-4 font-medium">Lead Technical Architect</p>
+<p class="text-on-surface-variant text-sm mb-8 leading-relaxed">
+                            Complete architectural overhaul for a multi-national logistics provider. Implemented custom automated routing algorithms and integrated real-time IoT tracking for warehouse management.
+                        </p>
+<div class="flex flex-wrap gap-2 mt-auto">
+<span class="text-[10px] px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label uppercase tracking-wider">Odoo ERP</span>
+<span class="text-[10px] px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label uppercase tracking-wider">Python</span>
+<span class="text-[10px] px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label uppercase tracking-wider">PostgreSQL</span>
+<span class="text-[10px] px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label uppercase tracking-wider">Docker</span>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-highest transition-all duration-300 group">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="account_balance">account_balance</span>
+<span class="text-xs font-label bg-primary/10 text-primary px-3 py-1 rounded-full">FinTech</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-2 group-hover:text-primary transition-colors">Banking Integration Layer</h3>
+<p class="text-sm text-sky-300/80 mb-4 font-medium">Senior Odoo Developer</p>
+<p class="text-on-surface-variant text-sm mb-8 leading-relaxed">
+                            Developed a secure middleware to sync Odoo Accounting with regional banking APIs. Focused on high-security transaction processing and automated reconciliation workflows.
+                        </p>
+<div class="flex flex-wrap gap-2 mt-auto">
+<span class="text-[10px] px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label uppercase tracking-wider">Odoo Accounting</span>
+<span class="text-[10px] px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label uppercase tracking-wider">API REST</span>
+<span class="text-[10px] px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label uppercase tracking-wider">OAuth 2.0</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Open Source Contributions Section -->
+<section class="mb-32">
+<div class="flex items-center gap-4 mb-12">
+<span class="h-px flex-1 bg-outline-variant/15"></span>
+<h2 class="text-sm font-label uppercase tracking-widest text-primary font-bold">Open Source Contributions</h2>
+<span class="h-px w-12 bg-outline-variant/15"></span>
+</div>
+<div class="space-y-6">
+<!-- OS Project 1 -->
+<div class="bg-surface-container p-6 rounded-xl border-l-4 border-primary hover:bg-surface-bright transition-all">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<h3 class="text-xl font-headline font-bold">OCA/Reporting-Engine</h3>
+<p class="text-sm text-on-surface-variant mt-1">Contributor &amp; Reviewer</p>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="text-[10px] px-3 py-1 rounded-full bg-surface-variant text-primary border border-primary/20 font-label">XML-RPC</span>
+<span class="text-[10px] px-3 py-1 rounded-full bg-surface-variant text-primary border border-primary/20 font-label">QWeb</span>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant mt-4 leading-relaxed max-w-3xl">
+                            Refactored core reporting modules to improve PDF generation performance by 40%. Implemented new dynamic filtering capabilities for complex financial reports used by the global Odoo Community Association.
+                        </p>
+</div>
+<!-- OS Project 2 -->
+<div class="bg-surface-container p-6 rounded-xl border-l-4 border-primary/40 hover:bg-surface-bright transition-all">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<h3 class="text-xl font-headline font-bold">Odoo-Telegram-Connector</h3>
+<p class="text-sm text-on-surface-variant mt-1">Project Lead</p>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="text-[10px] px-3 py-1 rounded-full bg-surface-variant text-primary border border-primary/20 font-label">Webhooks</span>
+<span class="text-[10px] px-3 py-1 rounded-full bg-surface-variant text-primary border border-primary/20 font-label">Python-Telegram-Bot</span>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant mt-4 leading-relaxed max-w-3xl">
+                            Created a standalone module for instant Odoo notifications via Telegram. Supports custom bot commands to query inventory status and approve purchase orders remotely.
+                        </p>
+</div>
+</div>
+</section>
+<!-- Bottom CTA Section -->
+<section class="bg-surface-bright rounded-2xl p-12 text-center relative overflow-hidden">
+<div class="absolute inset-0 primary-gradient opacity-5 pointer-events-none"></div>
+<h2 class="text-3xl font-headline font-bold mb-4">Have a complex Odoo requirement?</h2>
+<p class="text-on-surface-variant mb-8 max-w-md mx-auto">Let's discuss how we can build a robust, scalable backend for your enterprise.</p>
+<button class="primary-gradient text-on-primary px-8 py-3 rounded-xl font-bold font-space-grotesk hover:scale-105 transition-transform">
+                    Start a Project
+                </button>
+</section>
+</main>
+</div>
+<!-- Footer -->
+<footer class="w-full py-12 border-t border-sky-900/15 bg-[#00101d] flex flex-col items-center gap-4 w-full px-8">
+<p class="font-inter text-xs text-slate-500 uppercase tracking-widest">© 2026 Nelsibeth Oliva • Digital Editorial CV</p>
+<div class="flex gap-8">
+<a class="font-inter text-xs text-slate-600 hover:text-sky-300 transition-colors uppercase tracking-widest" href="#">LinkedIn</a>
+<a class="font-inter text-xs text-slate-600 hover:text-sky-300 transition-colors uppercase tracking-widest" href="#">GitHub</a>
+<a class="font-inter text-xs text-slate-600 hover:text-sky-300 transition-colors uppercase tracking-widest" href="#">Source Code</a>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 bg-[#00101d]/90 backdrop-blur-lg px-6 py-3 flex justify-between items-center z-50 border-t border-sky-900/15">
+<button class="flex flex-col items-center gap-1 text-slate-400">
+<span class="material-symbols-outlined" data-icon="work">work</span>
+<span class="text-[10px] font-label">Experience</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined" data-icon="terminal" style="font-variation-settings: 'FILL' 1;">terminal</span>
+<span class="text-[10px] font-label">Projects</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-slate-400">
+<span class="material-symbols-outlined" data-icon="layers">layers</span>
+<span class="text-[10px] font-label">Stack</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-slate-400">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="text-[10px] font-label">Contact</span>
+</button>
+</div>
+</body></html>

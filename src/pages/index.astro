@@ -1,0 +1,139 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TopAppBar from '../components/TopAppBar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Nelsibeth Oliva - Architecting Odoo Solutions">
+    <TopAppBar />
+    
+    <main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+        <!-- Hero Section -->
+        <section class="grid lg:grid-cols-12 gap-12 items-center mb-32">
+            <div class="lg:col-span-7">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/15 mb-6">
+                    <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                    <span class="text-xs font-label uppercase tracking-widest text-primary">Available for Projects</span>
+                </div>
+                <h1 class="font-headline text-6xl lg:text-8xl font-bold tracking-tighter mb-6 leading-tight">
+                    Architecting <span class="hero-gradient bg-clip-text text-transparent">Odoo</span> Solutions.
+                </h1>
+                <p class="text-xl text-on-surface-variant max-w-2xl mb-10 leading-relaxed font-body">
+                    Senior Technical Developer specializing in bespoke Odoo implementations, Python-driven automation, and scalable PostgreSQL database structures.
+                </p>
+                <div class="flex flex-wrap gap-4 font-headline">
+                    <button class="hero-gradient text-on-primary font-bold px-8 py-4 rounded-xl flex items-center gap-2 group transition-all">
+                        Let's Talk 
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </button>
+                    <button class="px-8 py-4 rounded-xl border border-outline-variant/30 text-on-surface hover:bg-surface-container transition-colors">
+                        View Technical Case Studies
+                    </button>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-5 relative">
+                <div class="aspect-square relative rounded-[2rem] overflow-hidden group">
+                    <img 
+                        alt="Nelsibeth Oliva" 
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                        data-alt="Professional studio portrait of a confident developer with vibrant blue hair highlights, dramatic cinematic lighting, deep sapphire background" 
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD47BwGGyAJCXoemPsEvaXiqUIL9XSxvPC30av2nquJo413Hbt0CSbqTqaOO7K4cGcbD2QWQamrooVbuWzAukG1hH_8CBIp2-ZFYS0O0QV-xnY6ThfZQRvJPVqauJCuqSglwvnPa2Jjy43P8BB2g5vwvd7wtMfE1XI0eDgEQUZ8Yf6ztxg18mz0xD00xFde414jD2aQXLecVHcmCebN0U8cplafP94xnOX1P7TNzdZC-pyloit8uqU77DyE1UhD6FVzt27ECYMBeBd1"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60"></div>
+                </div>
+                
+                <!-- Floating Card -->
+                <div class="absolute -bottom-6 -left-6 p-6 bg-surface-container-high/80 backdrop-blur-xl border border-outline-variant/15 rounded-2xl shadow-2xl max-w-xs xl:left-[-2rem]">
+                    <div class="flex items-center gap-4 mb-3">
+                        <div class="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center">
+                            <span class="material-symbols-outlined text-primary" data-weight="fill">terminal</span>
+                        </div>
+                        <div>
+                            <p class="text-xs font-label text-slate-500 uppercase tracking-tighter">Stack Status</p>
+                            <p class="text-sm font-bold text-on-surface font-headline">V17 Certified</p>
+                        </div>
+                    </div>
+                    <div class="h-1.5 w-full bg-surface-container rounded-full overflow-hidden">
+                        <div class="h-full w-[95%] hero-gradient"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Summary & Expertise -->
+        <section class="grid md:grid-cols-2 gap-24 items-start mb-32">
+            <div>
+                <h2 class="font-headline text-3xl font-bold mb-8 flex items-center gap-4">
+                    Professional Summary
+                    <span class="h-px flex-1 bg-outline-variant/15"></span>
+                </h2>
+                <div class="space-y-6 text-on-surface-variant leading-relaxed text-lg font-body">
+                    <p>
+                        With over 6 years of focused experience in the <span class="text-primary font-semibold">Odoo ecosystem</span>, I bridge the gap between complex business requirements and high-performance technical architecture.
+                    </p>
+                    <p>
+                        My approach prioritizes maintainability and scalability, ensuring that custom modules integrate seamlessly with Odoo's core while providing the flexibility needed for evolving enterprise workflows.
+                    </p>
+                </div>
+            </div>
+            
+            <div>
+                <h2 class="font-headline text-3xl font-bold mb-8 flex items-center gap-4">
+                    Core Expertise
+                    <span class="h-px flex-1 bg-outline-variant/15"></span>
+                </h2>
+                
+                <!-- Bento Grid Style Expertise -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="col-span-2 p-6 rounded-2xl bg-surface-container-low border border-outline-variant/10 hover:bg-surface-container transition-colors group">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="material-symbols-outlined text-primary text-3xl" data-weight="fill">rocket_launch</span>
+                            <span class="text-xs font-label text-slate-500">Mastery</span>
+                        </div>
+                        <h3 class="font-headline font-bold text-xl mb-1">Odoo Enterprise</h3>
+                        <p class="text-sm text-on-surface-variant font-body">Framework expert, ORM specialist, and UI/UX customizer for diverse industry verticals.</p>
+                    </div>
+                    
+                    <div class="p-6 rounded-2xl bg-surface-container-low border border-outline-variant/10 hover:bg-surface-container transition-colors">
+                        <div class="w-10 h-10 rounded-lg bg-surface-variant flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined text-primary" data-weight="fill">code</span>
+                        </div>
+                        <h3 class="font-headline font-bold text-lg mb-1">Python</h3>
+                        <p class="text-xs text-on-surface-variant font-body">Backend logic, automation scripts, and high-level integrations.</p>
+                    </div>
+                    
+                    <div class="p-6 rounded-2xl bg-surface-container-low border border-outline-variant/10 hover:bg-surface-container transition-colors">
+                        <div class="w-10 h-10 rounded-lg bg-surface-variant flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined text-primary" data-weight="fill">database</span>
+                        </div>
+                        <h3 class="font-headline font-bold text-lg mb-1">PostgreSQL</h3>
+                        <p class="text-xs text-on-surface-variant font-body">Advanced querying, database tuning, and migration management.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats / Proof Points -->
+        <section class="grid grid-cols-2 md:grid-cols-4 gap-8 py-16 border-y border-outline-variant/10">
+            <div class="text-center">
+                <p class="text-4xl font-headline font-black text-primary mb-1">45+</p>
+                <p class="text-xs font-label uppercase tracking-widest text-slate-500">Modules Deployed</p>
+            </div>
+            <div class="text-center">
+                <p class="text-4xl font-headline font-black text-primary mb-1">12</p>
+                <p class="text-xs font-label uppercase tracking-widest text-slate-500">Global Migrations</p>
+            </div>
+            <div class="text-center">
+                <p class="text-4xl font-headline font-black text-primary mb-1">98%</p>
+                <p class="text-xs font-label uppercase tracking-widest text-slate-500">Uptime Record</p>
+            </div>
+            <div class="text-center">
+                <p class="text-4xl font-headline font-black text-primary mb-1">6yrs</p>
+                <p class="text-xs font-label uppercase tracking-widest text-slate-500">Tech Leadership</p>
+            </div>
+        </section>
+    </main>
+
+    <Footer />
+</Layout>

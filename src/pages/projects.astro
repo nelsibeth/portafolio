@@ -1,0 +1,133 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TopAppBar from '../components/TopAppBar.astro';
+import SideNavBar from '../components/SideNavBar.astro';
+import BottomNavBar from '../components/BottomNavBar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Projects | Nelsibeth Oliva - Odoo Developer">
+    <TopAppBar />
+    
+    <div class="flex min-h-screen pt-20">
+        <SideNavBar />
+        
+        <main class="flex-1 px-8 md:px-16 py-12 max-w-6xl mx-auto">
+            <!-- Header Section -->
+            <header class="mb-24">
+                <h1 class="text-5xl md:text-6xl font-bold font-headline mb-6 tracking-tighter">
+                    Selected <span class="text-primary">Projects</span>
+                </h1>
+                <p class="text-on-surface-variant text-lg max-w-2xl leading-relaxed font-body">
+                    Engineering scalable business architectures through Odoo. My work spans from high-impact Enterprise ERP deployments to specialized open-source modules.
+                </p>
+            </header>
+
+            <!-- Enterprise Solutions Section -->
+            <section class="mb-32">
+                <div class="flex items-center gap-4 mb-12">
+                    <span class="h-px flex-1 bg-outline-variant/15"></span>
+                    <h2 class="text-sm font-label uppercase tracking-widest text-primary font-bold">Enterprise Solutions</h2>
+                    <span class="h-px w-12 bg-outline-variant/15"></span>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Project Card 1 -->
+                    <div class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-highest transition-all duration-300 group">
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="material-symbols-outlined text-primary text-4xl" data-icon="factory">factory</span>
+                            <span class="text-xs font-label bg-primary/10 text-primary px-3 py-1 rounded-full">v16 Enterprise</span>
+                        </div>
+                        <h3 class="text-2xl font-headline font-bold mb-2 group-hover:text-primary transition-colors">Global Logistics ERP</h3>
+                        <p class="text-sm text-sky-300/80 mb-4 font-medium font-body">Lead Technical Architect</p>
+                        <p class="text-on-surface-variant text-sm mb-8 leading-relaxed font-body">
+                            Complete architectural overhaul for a multi-national logistics provider. Implemented custom automated routing algorithms and integrated real-time IoT tracking for warehouse management.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="text-[10px] px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label uppercase tracking-wider">Odoo ERP</span>
+                            <span class="text-[10px] px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label uppercase tracking-wider">Python</span>
+                            <span class="text-[10px] px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label uppercase tracking-wider">PostgreSQL</span>
+                            <span class="text-[10px] px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label uppercase tracking-wider">Docker</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card 2 -->
+                    <div class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-highest transition-all duration-300 group">
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="material-symbols-outlined text-primary text-4xl" data-icon="account_balance">account_balance</span>
+                            <span class="text-xs font-label bg-primary/10 text-primary px-3 py-1 rounded-full">FinTech</span>
+                        </div>
+                        <h3 class="text-2xl font-headline font-bold mb-2 group-hover:text-primary transition-colors">Banking Integration Layer</h3>
+                        <p class="text-sm text-sky-300/80 mb-4 font-medium font-body">Senior Odoo Developer</p>
+                        <p class="text-on-surface-variant text-sm mb-8 leading-relaxed font-body">
+                            Developed a secure middleware to sync Odoo Accounting with regional banking APIs. Focused on high-security transaction processing and automated reconciliation workflows.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="text-[10px] px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label uppercase tracking-wider">Odoo Accounting</span>
+                            <span class="text-[10px] px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label uppercase tracking-wider">API REST</span>
+                            <span class="text-[10px] px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label uppercase tracking-wider">OAuth 2.0</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Open Source Contributions Section -->
+            <section class="mb-32">
+                <div class="flex items-center gap-4 mb-12">
+                    <span class="h-px flex-1 bg-outline-variant/15"></span>
+                    <h2 class="text-sm font-label uppercase tracking-widest text-primary font-bold">Open Source Contributions</h2>
+                    <span class="h-px w-12 bg-outline-variant/15"></span>
+                </div>
+                
+                <div class="space-y-6">
+                    <!-- OS Project 1 -->
+                    <div class="bg-surface-container p-6 rounded-xl border-l-4 border-primary hover:bg-surface-bright transition-all">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                            <div>
+                                <h3 class="text-xl font-headline font-bold">OCA/Reporting-Engine</h3>
+                                <p class="text-sm text-on-surface-variant mt-1 font-body">Contributor & Reviewer</p>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-[10px] px-3 py-1 rounded-full bg-surface-variant text-primary border border-primary/20 font-label">XML-RPC</span>
+                                <span class="text-[10px] px-3 py-1 rounded-full bg-surface-variant text-primary border border-primary/20 font-label">QWeb</span>
+                            </div>
+                        </div>
+                        <p class="text-sm text-on-surface-variant mt-4 leading-relaxed max-w-3xl font-body">
+                            Refactored core reporting modules to improve PDF generation performance by 40%. Implemented new dynamic filtering capabilities for complex financial reports used by the global Odoo Community Association.
+                        </p>
+                    </div>
+                    
+                    <!-- OS Project 2 -->
+                    <div class="bg-surface-container p-6 rounded-xl border-l-4 border-primary/40 hover:bg-surface-bright transition-all">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                            <div>
+                                <h3 class="text-xl font-headline font-bold">Odoo-Telegram-Connector</h3>
+                                <p class="text-sm text-on-surface-variant mt-1 font-body">Project Lead</p>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-[10px] px-3 py-1 rounded-full bg-surface-variant text-primary border border-primary/20 font-label">Webhooks</span>
+                                <span class="text-[10px] px-3 py-1 rounded-full bg-surface-variant text-primary border border-primary/20 font-label">Python-Telegram-Bot</span>
+                            </div>
+                        </div>
+                        <p class="text-sm text-on-surface-variant mt-4 leading-relaxed max-w-3xl font-body">
+                            Created a standalone module for instant Odoo notifications via Telegram. Supports custom bot commands to query inventory status and approve purchase orders remotely.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bottom CTA Section -->
+            <section class="bg-surface-bright rounded-2xl p-12 text-center relative overflow-hidden">
+                <div class="absolute inset-0 primary-gradient opacity-5 pointer-events-none"></div>
+                <h2 class="text-3xl font-headline font-bold mb-4">Have a complex Odoo requirement?</h2>
+                <p class="text-on-surface-variant mb-8 max-w-md mx-auto font-body">Let's discuss how we can build a robust, scalable backend for your enterprise.</p>
+                <button class="primary-gradient text-on-primary px-8 py-3 rounded-xl font-bold font-headline hover:scale-105 transition-transform">
+                    Start a Project
+                </button>
+            </section>
+        </main>
+    </div>
+    
+    <Footer />
+    <BottomNavBar />
+</Layout>

@@ -1,0 +1,20 @@
+---
+// src/components/TopAppBar.astro
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); // remove first /
+---
+
+<nav class="fixed top-0 w-full z-50 bg-[#00101d]/60 backdrop-blur-xl transition-all left-0 right-0">
+  <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+    <div class="text-xl font-bold tracking-tighter text-sky-400 font-headline">Nelsibeth Oliva</div>
+    <div class="hidden md:flex items-center gap-8 font-headline text-sm tracking-tight">
+      <a class={`transition-colors ${currentPath === '' ? 'text-sky-400 border-b-2 border-sky-400 pb-1' : 'text-slate-400 hover:text-sky-300'}`} href="/">Experience</a>
+      <a class={`transition-colors ${currentPath === 'projects' ? 'text-sky-400 border-b-2 border-sky-400 pb-1' : 'text-slate-400 hover:text-sky-300'}`} href="/projects">Projects</a>
+      <a class={`transition-colors text-slate-400 hover:text-sky-300`} href="#">Stack</a>
+      <a class={`transition-colors ${currentPath === 'contact' ? 'text-sky-400 border-b-2 border-sky-400 pb-1' : 'text-slate-400 hover:text-sky-300'}`} href="/contact">Contact</a>
+    </div>
+    <button class="bg-gradient-primary text-on-primary font-headline font-bold px-6 py-2 rounded-xl hover:scale-105 active:scale-95 transition-all text-sm">
+      Download CV
+    </button>
+  </div>
+</nav>

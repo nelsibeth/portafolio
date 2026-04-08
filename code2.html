@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#7bd1fa",
+                    "outline": "#567997",
+                    "on-primary-fixed": "#00121d",
+                    "surface-container-lowest": "#000000",
+                    "secondary-dim": "#cad5ed",
+                    "on-secondary-fixed-variant": "#515c70",
+                    "inverse-on-surface": "#345875",
+                    "error-dim": "#d7383b",
+                    "error": "#ff716c",
+                    "primary-container": "#22b1ec",
+                    "on-tertiary-fixed-variant": "#004f69",
+                    "on-background": "#d1e8ff",
+                    "on-tertiary-container": "#00465d",
+                    "tertiary": "#9bddff",
+                    "tertiary-container": "#7bd1fa",
+                    "inverse-surface": "#f7f9ff",
+                    "inverse-primary": "#00668b",
+                    "on-surface": "#d1e8ff",
+                    "surface-container-highest": "#002840",
+                    "surface-tint": "#3bbffa",
+                    "on-secondary-fixed": "#354053",
+                    "on-primary-container": "#002b3d",
+                    "surface-bright": "#002f4a",
+                    "on-primary": "#00374d",
+                    "error-container": "#9f0519",
+                    "on-secondary-container": "#c5d1e8",
+                    "surface-variant": "#002840",
+                    "on-tertiary-fixed": "#003041",
+                    "on-primary-fixed-variant": "#003a50",
+                    "background": "#00101d",
+                    "primary-fixed": "#2db7f2",
+                    "secondary-fixed": "#d8e3fb",
+                    "outline-variant": "#264b67",
+                    "primary": "#3bbffa",
+                    "on-secondary": "#475266",
+                    "on-error": "#490006",
+                    "primary-fixed-dim": "#05a9e3",
+                    "tertiary-fixed-dim": "#6cc3eb",
+                    "surface-dim": "#00101d",
+                    "on-surface-variant": "#8bafcf",
+                    "secondary-fixed-dim": "#cad5ed",
+                    "tertiary-dim": "#6cc3eb",
+                    "surface": "#00101d",
+                    "secondary-container": "#3c475a",
+                    "secondary": "#d8e3fb",
+                    "surface-container-high": "#002237",
+                    "primary-dim": "#05a9e3",
+                    "on-tertiary": "#004f69",
+                    "surface-container-low": "#001524",
+                    "on-error-container": "#ffa8a3",
+                    "surface-container": "#001b2e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .font-space-grotesk { font-family: 'Space Grotesk', sans-serif; }
+        .font-inter { font-family: 'Inter', sans-serif; }
+        .glass-panel {
+            background: rgba(0, 27, 46, 0.6);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #3bbffa 0%, #22b1ec 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-gradient-primary {
+            background: linear-gradient(135deg, #3bbffa 0%, #22b1ec 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary/30 min-h-screen">
+<!-- Top Navigation -->
+<header class="fixed top-0 w-full z-50 bg-[#00101d]/60 backdrop-blur-xl">
+<nav class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-bold tracking-tighter text-sky-400 font-space-grotesk">Nelsibeth Oliva</div>
+<div class="hidden md:flex items-center gap-8 font-space-grotesk text-sm tracking-tight">
+<a class="text-slate-400 hover:text-sky-300 transition-colors" href="#">Experience</a>
+<a class="text-slate-400 hover:text-sky-300 transition-colors" href="#">Projects</a>
+<a class="text-slate-400 hover:text-sky-300 transition-colors" href="#">Stack</a>
+<a class="text-sky-400 border-b-2 border-sky-400 pb-1" href="#">Contact</a>
+</div>
+<button class="bg-gradient-primary text-on-primary font-bold px-6 py-2 rounded-xl transition-all hover:scale-105 active:scale-95 text-sm">
+                Download CV
+            </button>
+</nav>
+</header>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Column: Editorial Content -->
+<div class="lg:col-span-5 space-y-12">
+<section>
+<span class="text-primary font-label text-xs tracking-[0.2em] uppercase mb-4 block">Final Transmission</span>
+<h1 class="text-5xl md:text-7xl font-headline font-bold leading-none tracking-tighter mb-8">
+                    Let's Build the <span class="text-gradient">Next Chapter.</span>
+</h1>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-md">
+                    Whether you're looking for an Odoo specialist to scale your ecosystem or a technical architect for a complex ERP migration, I'm ready to connect.
+                </p>
+</section>
+<!-- Social Connect Bento -->
+<div class="grid grid-cols-2 gap-4">
+<a class="group p-6 bg-surface-container rounded-xl border-outline-variant/15 hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="link">link</span>
+<h3 class="font-headline font-bold text-on-surface group-hover:text-primary transition-colors">LinkedIn</h3>
+<p class="text-xs text-on-surface-variant font-label mt-1">Professional Network</p>
+</a>
+<a class="group p-6 bg-surface-container rounded-xl border-outline-variant/15 hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="terminal">terminal</span>
+<h3 class="font-headline font-bold text-on-surface group-hover:text-primary transition-colors">GitHub</h3>
+<p class="text-xs text-on-surface-variant font-label mt-1">Code Repository</p>
+</a>
+</div>
+<!-- Quick Info -->
+<div class="space-y-6 pt-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="mail">mail</span>
+</div>
+<div>
+<p class="text-xs text-on-surface-variant font-label uppercase tracking-widest">Email Address</p>
+<p class="font-headline font-medium text-on-surface">hello@nelsibeth.dev</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+</div>
+<div>
+<p class="text-xs text-on-surface-variant font-label uppercase tracking-widest">Location</p>
+<p class="font-headline font-medium text-on-surface">Remote / Global</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Contact Form -->
+<div class="lg:col-span-7">
+<div class="glass-panel p-8 md:p-12 rounded-[2rem] border border-outline-variant/10 shadow-[40px_0_60px_rgba(209,232,255,0.06)]">
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="text-xs font-label uppercase tracking-widest text-on-surface-variant ml-1">Full Name</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary text-on-surface placeholder:text-slate-600 transition-all" placeholder="Jane Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-label uppercase tracking-widest text-on-surface-variant ml-1">Email Address</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary text-on-surface placeholder:text-slate-600 transition-all" placeholder="jane@company.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-label uppercase tracking-widest text-on-surface-variant ml-1">Project Type</label>
+<div class="flex flex-wrap gap-3">
+<button class="px-5 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium" type="button">Odoo Implementation</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface-variant text-sm font-medium hover:bg-surface-bright transition-colors" type="button">Migration</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface-variant text-sm font-medium hover:bg-surface-bright transition-colors" type="button">Consulting</button>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-label uppercase tracking-widest text-on-surface-variant ml-1">Message</label>
+<textarea class="w-full bg-surface-container-lowest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary text-on-surface placeholder:text-slate-600 transition-all resize-none" placeholder="Tell me about your project goals..." rows="5"></textarea>
+</div>
+<button class="w-full bg-gradient-primary text-on-primary font-headline font-bold py-5 rounded-xl text-lg flex items-center justify-center gap-2 group hover:shadow-[0_0_30px_rgba(59,191,250,0.3)] transition-all">
+                        Initiate Connection
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</form>
+</div>
+<!-- Aesthetic Image Support -->
+<div class="mt-8 relative h-48 w-full rounded-[2rem] overflow-hidden group">
+<img alt="Global connectivity abstract" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Abstract digital visualization of global network connections with flowing cyan data streams on a deep navy background in a 2026 tech aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcZKPpOUFBu8yJLeIaBu_LsYzR_RxJL4lx5pcFED6zsUu3V0rq_8owgX8_IRRS6mrLr9AR0GkybwMJniw5L9no_ByJVeZcv2WTURLTfqqr4bb6rI91fLBGk0ZRTMdR102HnzNPH9AqDHVDHAnTgWlGkEnsVEhRjwRAb6oJSJh-IxS2MoYNCf2234PGhOQtrJs1H4tNuXQF4AOctL5vLGTctsXVeyv6VHb1UvyhcOz20oB2ZPEpc-DM84i3kCCvv4SpKy71BjIRuYAm"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-8 flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
+<span class="text-xs font-label uppercase tracking-widest text-on-surface">Currently accepting new projects for Q3 2026</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 border-t border-sky-900/15 bg-[#00101d]">
+<div class="flex flex-col items-center gap-4 w-full px-8">
+<p class="font-inter text-xs text-slate-500 uppercase tracking-widest">© 2026 Nelsibeth Oliva • Digital Editorial CV</p>
+<div class="flex gap-6">
+<a class="text-slate-600 hover:text-sky-300 transition-colors font-inter text-xs uppercase tracking-widest" href="#">LinkedIn</a>
+<a class="text-slate-600 hover:text-sky-300 transition-colors font-inter text-xs uppercase tracking-widest" href="#">GitHub</a>
+<a class="text-slate-600 hover:text-sky-300 transition-colors font-inter text-xs uppercase tracking-widest" href="#">Source Code</a>
+</div>
+</div>
+</footer>
+<!-- Side Navigation Bar (Hidden on Mobile) -->
+<aside class="hidden lg:flex flex-col h-screen sticky top-0 fixed left-0 w-64 border-r border-sky-900/15 bg-[#001524] shadow-[40px_0_60px_rgba(209,232,255,0.06)] z-40 overflow-y-auto">
+<div class="p-8">
+<div class="w-12 h-12 rounded-full mb-4 overflow-hidden border-2 border-primary">
+<img alt="Nelsibeth Oliva Odoo Developer" class="w-full h-full object-cover" data-alt="Professional portrait of a developer with vibrant electric cyan colored hair against a clean minimalist architectural background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFC7HyKtUm7Kb2x2xgvp9dqjuTdHMTlWdFBk95DbUltyZTjDe6pK81oHxFUmbwLk_Z6JCAgPFbGIn0S1uhHd-xjX2SdDktDPBtL69pOXrEb6288BMuMut42X2QD6x6Gj7HNaz3vGz-bVGAMlupHmIdHTx4WuRJw4-T7fzkU86vpx-qA9ly-QJhVrTMzHi_a86ohk_O_W5xU5y0neU8W6T2NLeIM-V8dalqseHafVGFr4MkpzjWAqnK1Kx8cGwh9Yk6UGVNvdW7YyPu"/>
+</div>
+<h2 class="text-lg font-black text-sky-400 font-space-grotesk">Nelsibeth Oliva</h2>
+<p class="text-xs text-slate-400 font-space-grotesk">Odoo Developer</p>
+</div>
+<nav class="flex-1 px-4 py-4 space-y-2">
+<a class="flex items-center gap-3 px-4 py-3 text-slate-400 hover:bg-[#002237] transition-all font-space-grotesk text-sm rounded-r-full group" href="#">
+<span class="material-symbols-outlined text-xl group-hover:text-primary" data-icon="work">work</span>
+                Experience
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-400 hover:bg-[#002237] transition-all font-space-grotesk text-sm rounded-r-full group" href="#">
+<span class="material-symbols-outlined text-xl group-hover:text-primary" data-icon="terminal">terminal</span>
+                Projects
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-400 hover:bg-[#002237] transition-all font-space-grotesk text-sm rounded-r-full group" href="#">
+<span class="material-symbols-outlined text-xl group-hover:text-primary" data-icon="layers">layers</span>
+                Stack
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 bg-sky-400/10 text-sky-400 font-bold rounded-r-full font-space-grotesk text-sm" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="mail">mail</span>
+                Contact
+            </a>
+</nav>
+<div class="p-8">
+<button class="w-full py-3 bg-gradient-primary text-on-primary font-bold rounded-xl text-sm transition-all hover:scale-[0.98]">
+                Hire Me
+            </button>
+</div>
+</aside>
+</body></html>

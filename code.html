@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#7bd1fa",
+                    "outline": "#567997",
+                    "on-primary-fixed": "#00121d",
+                    "surface-container-lowest": "#000000",
+                    "secondary-dim": "#cad5ed",
+                    "on-secondary-fixed-variant": "#515c70",
+                    "inverse-on-surface": "#345875",
+                    "error-dim": "#d7383b",
+                    "error": "#ff716c",
+                    "primary-container": "#22b1ec",
+                    "on-tertiary-fixed-variant": "#004f69",
+                    "on-background": "#d1e8ff",
+                    "on-tertiary-container": "#00465d",
+                    "tertiary": "#9bddff",
+                    "tertiary-container": "#7bd1fa",
+                    "inverse-surface": "#f7f9ff",
+                    "inverse-primary": "#00668b",
+                    "on-surface": "#d1e8ff",
+                    "surface-container-highest": "#002840",
+                    "surface-tint": "#3bbffa",
+                    "on-secondary-fixed": "#354053",
+                    "on-primary-container": "#002b3d",
+                    "surface-bright": "#002f4a",
+                    "on-primary": "#00374d",
+                    "error-container": "#9f0519",
+                    "on-secondary-container": "#c5d1e8",
+                    "surface-variant": "#002840",
+                    "on-tertiary-fixed": "#003041",
+                    "on-primary-fixed-variant": "#003a50",
+                    "background": "#00101d",
+                    "primary-fixed": "#2db7f2",
+                    "secondary-fixed": "#d8e3fb",
+                    "outline-variant": "#264b67",
+                    "primary": "#3bbffa",
+                    "on-secondary": "#475266",
+                    "on-error": "#490006",
+                    "primary-fixed-dim": "#05a9e3",
+                    "tertiary-fixed-dim": "#6cc3eb",
+                    "surface-dim": "#00101d",
+                    "on-surface-variant": "#8bafcf",
+                    "secondary-fixed-dim": "#cad5ed",
+                    "tertiary-dim": "#6cc3eb",
+                    "surface": "#00101d",
+                    "secondary-container": "#3c475a",
+                    "secondary": "#d8e3fb",
+                    "surface-container-high": "#002237",
+                    "primary-dim": "#05a9e3",
+                    "on-tertiary": "#004f69",
+                    "surface-container-low": "#001524",
+                    "on-error-container": "#ffa8a3",
+                    "surface-container": "#001b2e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      body { background-color: #00101d; }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        background: rgba(0, 16, 29, 0.6);
+        backdrop-filter: blur(24px);
+      }
+      .hero-gradient {
+        background: linear-gradient(135deg, #3bbffa 0%, #22b1ec 100%);
+      }
+      .tonal-shift-no-border { border: none; }
+    </style>
+</head>
+<body class="font-body text-on-background selection:bg-primary/30">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#00101d]/60 backdrop-blur-xl">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-bold tracking-tighter text-sky-400 font-headline">Nelsibeth Oliva</div>
+<div class="hidden md:flex items-center gap-8 font-headline text-sm tracking-tight">
+<a class="text-sky-400 border-b-2 border-sky-400 pb-1" href="#">Experience</a>
+<a class="text-slate-400 hover:text-sky-300 transition-colors" href="#">Projects</a>
+<a class="text-slate-400 hover:text-sky-300 transition-colors" href="#">Stack</a>
+<a class="text-slate-400 hover:text-sky-300 transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary-container text-on-primary-container font-headline font-bold px-6 py-2 rounded-xl hover:opacity-90 transition-all text-sm">
+                Download CV
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<section class="grid lg:grid-cols-12 gap-12 items-center mb-32">
+<div class="lg:col-span-7">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/15 mb-6">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-xs font-label uppercase tracking-widest text-primary">Available for Projects</span>
+</div>
+<h1 class="font-headline text-6xl lg:text-8xl font-bold tracking-tighter mb-6 leading-tight">
+                    Architecting <span class="hero-gradient bg-clip-text text-transparent">Odoo</span> Solutions.
+                </h1>
+<p class="text-xl text-on-surface-variant max-w-2xl mb-10 leading-relaxed">
+                    Senior Technical Developer specializing in bespoke Odoo implementations, Python-driven automation, and scalable PostgreSQL database structures.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="hero-gradient text-on-primary font-bold px-8 py-4 rounded-xl flex items-center gap-2 group transition-all">
+                        Let's Talk 
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<button class="px-8 py-4 rounded-xl border border-outline-variant/30 text-on-surface hover:bg-surface-container transition-colors">
+                        View Technical Case Studies
+                    </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-square relative rounded-[2rem] overflow-hidden group">
+<img alt="Nelsibeth Oliva" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Professional studio portrait of a confident developer with vibrant blue hair highlights, dramatic cinematic lighting, deep sapphire background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD47BwGGyAJCXoemPsEvaXiqUIL9XSxvPC30av2nquJo413Hbt0CSbqTqaOO7K4cGcbD2QWQamrooVbuWzAukG1hH_8CBIp2-ZFYS0O0QV-xnY6ThfZQRvJPVqauJCuqSglwvnPa2Jjy43P8BB2g5vwvd7wtMfE1XI0eDgEQUZ8Yf6ztxg18mz0xD00xFde414jD2aQXLecVHcmCebN0U8cplafP94xnOX1P7TNzdZC-pyloit8uqU77DyE1UhD6FVzt27ECYMBeBd1"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60"></div>
+</div>
+<!-- Floating Card -->
+<div class="absolute -bottom-6 -left-6 p-6 bg-surface-container-high/80 backdrop-blur-xl border border-outline-variant/15 rounded-2xl shadow-2xl max-w-xs">
+<div class="flex items-center gap-4 mb-3">
+<div class="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-weight="fill">terminal</span>
+</div>
+<div>
+<p class="text-xs font-label text-slate-500 uppercase tracking-tighter">Stack Status</p>
+<p class="text-sm font-bold text-on-surface">V17 Certified</p>
+</div>
+</div>
+<div class="h-1.5 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full w-[95%] hero-gradient"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Professional Summary & Expertise -->
+<section class="grid md:grid-cols-2 gap-24 items-start mb-32">
+<div>
+<h2 class="font-headline text-3xl font-bold mb-8 flex items-center gap-4">
+                    Professional Summary
+                    <span class="h-px flex-1 bg-outline-variant/15"></span>
+</h2>
+<div class="space-y-6 text-on-surface-variant leading-relaxed text-lg">
+<p>
+                        With over 6 years of focused experience in the <span class="text-primary font-semibold">Odoo ecosystem</span>, I bridge the gap between complex business requirements and high-performance technical architecture.
+                    </p>
+<p>
+                        My approach prioritizes maintainability and scalability, ensuring that custom modules integrate seamlessly with Odoo's core while providing the flexibility needed for evolving enterprise workflows.
+                    </p>
+</div>
+</div>
+<div>
+<h2 class="font-headline text-3xl font-bold mb-8 flex items-center gap-4">
+                    Core Expertise
+                    <span class="h-px flex-1 bg-outline-variant/15"></span>
+</h2>
+<!-- Bento Grid Style Expertise -->
+<div class="grid grid-cols-2 gap-4">
+<div class="col-span-2 p-6 rounded-2xl bg-surface-container-low border border-outline-variant/10 hover:bg-surface-container transition-colors group">
+<div class="flex items-center justify-between mb-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-weight="fill">rocket_launch</span>
+<span class="text-xs font-label text-slate-500">Mastery</span>
+</div>
+<h3 class="font-headline font-bold text-xl mb-1">Odoo Enterprise</h3>
+<p class="text-sm text-on-surface-variant">Framework expert, ORM specialist, and UI/UX customizer for diverse industry verticals.</p>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-low border border-outline-variant/10 hover:bg-surface-container transition-colors">
+<div class="w-10 h-10 rounded-lg bg-surface-variant flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary" data-weight="fill">code</span>
+</div>
+<h3 class="font-headline font-bold text-lg mb-1">Python</h3>
+<p class="text-xs text-on-surface-variant">Backend logic, automation scripts, and high-level integrations.</p>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-low border border-outline-variant/10 hover:bg-surface-container transition-colors">
+<div class="w-10 h-10 rounded-lg bg-surface-variant flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary" data-weight="fill">database</span>
+</div>
+<h3 class="font-headline font-bold text-lg mb-1">PostgreSQL</h3>
+<p class="text-xs text-on-surface-variant">Advanced querying, database tuning, and migration management.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats / Proof Points -->
+<section class="grid grid-cols-2 md:grid-cols-4 gap-8 py-16 border-y border-outline-variant/10">
+<div class="text-center">
+<p class="text-4xl font-headline font-black text-primary mb-1">45+</p>
+<p class="text-xs font-label uppercase tracking-widest text-slate-500">Modules Deployed</p>
+</div>
+<div class="text-center">
+<p class="text-4xl font-headline font-black text-primary mb-1">12</p>
+<p class="text-xs font-label uppercase tracking-widest text-slate-500">Global Migrations</p>
+</div>
+<div class="text-center">
+<p class="text-4xl font-headline font-black text-primary mb-1">98%</p>
+<p class="text-xs font-label uppercase tracking-widest text-slate-500">Uptime Record</p>
+</div>
+<div class="text-center">
+<p class="text-4xl font-headline font-black text-primary mb-1">6yrs</p>
+<p class="text-xs font-label uppercase tracking-widest text-slate-500">Tech Leadership</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#00101d] w-full py-12 border-t border-sky-900/15">
+<div class="flex flex-col items-center gap-6 w-full px-8 max-w-7xl mx-auto">
+<div class="flex gap-8">
+<a class="font-label text-xs text-slate-600 uppercase tracking-widest hover:text-sky-300 transition-colors" href="#">LinkedIn</a>
+<a class="font-label text-xs text-slate-600 uppercase tracking-widest hover:text-sky-300 transition-colors" href="#">GitHub</a>
+<a class="font-label text-xs text-slate-600 uppercase tracking-widest hover:text-sky-300 transition-colors" href="#">Source Code</a>
+</div>
+<p class="font-label text-xs text-slate-500 uppercase tracking-widest">© 2026 Nelsibeth Oliva • Digital Editorial CV</p>
+</div>
+</footer>
+</body></html>
