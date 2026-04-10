@@ -45,7 +45,7 @@ import Footer from "../components/Footer.astro";
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <!-- Project Card 1 -->
                     <div
-                        class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-highest transition-all duration-300 group"
+                        class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-highest transition-all duration-300 group flex flex-col h-full"
                     >
                         <div class="flex justify-between items-start mb-6">
                             <span
@@ -79,19 +79,19 @@ import Footer from "../components/Footer.astro";
                         </p>
                         <div class="flex flex-wrap gap-2 mt-auto">
                             <span
-                                class="text-[10px] px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label uppercase tracking-wider"
+                                class="text-[10px] px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary font-label uppercase tracking-wider transition-all group-hover:border-primary/40 group-hover:shadow-[0_0_15px_rgba(59,130,246,0.2)]"
                                 >Odoo ERP</span
                             >
                             <span
-                                class="text-[10px] px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label uppercase tracking-wider"
+                                class="text-[10px] px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary font-label uppercase tracking-wider transition-all group-hover:border-primary/40 group-hover:shadow-[0_0_15px_rgba(59,130,246,0.2)]"
                                 >Python</span
                             >
                             <span
-                                class="text-[10px] px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label uppercase tracking-wider"
+                                class="text-[10px] px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary font-label uppercase tracking-wider transition-all group-hover:border-primary/40 group-hover:shadow-[0_0_15px_rgba(59,130,246,0.2)]"
                                 >PostgreSQL</span
                             >
                             <span
-                                class="text-[10px] px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label uppercase tracking-wider"
+                                class="text-[10px] px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary font-label uppercase tracking-wider transition-all group-hover:border-primary/40 group-hover:shadow-[0_0_15px_rgba(59,130,246,0.2)]"
                                 >Docker</span
                             >
                         </div>
@@ -99,7 +99,7 @@ import Footer from "../components/Footer.astro";
 
                     <!-- Project Card 2 -->
                     <div
-                        class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-highest transition-all duration-300 group"
+                        class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-highest transition-all duration-300 group flex flex-col h-full"
                     >
                         <div class="flex justify-between items-start mb-6">
                             <span
@@ -134,15 +134,15 @@ import Footer from "../components/Footer.astro";
                         </p>
                         <div class="flex flex-wrap gap-2 mt-auto">
                             <span
-                                class="text-[10px] px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label uppercase tracking-wider"
+                                class="text-[10px] px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary font-label uppercase tracking-wider transition-all group-hover:border-primary/40 group-hover:shadow-[0_0_15px_rgba(59,130,246,0.2)]"
                                 >Odoo Accounting</span
                             >
                             <span
-                                class="text-[10px] px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label uppercase tracking-wider"
+                                class="text-[10px] px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary font-label uppercase tracking-wider transition-all group-hover:border-primary/40 group-hover:shadow-[0_0_15px_rgba(59,130,246,0.2)]"
                                 >API REST</span
                             >
                             <span
-                                class="text-[10px] px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label uppercase tracking-wider"
+                                class="text-[10px] px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary font-label uppercase tracking-wider transition-all group-hover:border-primary/40 group-hover:shadow-[0_0_15px_rgba(59,130,246,0.2)]"
                                 >OAuth 2.0</span
                             >
                         </div>
@@ -162,37 +162,34 @@ import Footer from "../components/Footer.astro";
                     <span class="h-px w-12 bg-outline-variant/15"></span>
                 </div>
 
-                <div class="space-y-6">
+                <div class="grid grid-cols-1 gap-8">
                     <!-- OS Project 1 -->
                     <div
-                        class="bg-surface-container p-6 rounded-xl border-l-4 border-primary hover:bg-surface-bright transition-all"
+                        class="bg-surface-container-low p-6 rounded-xl hover:bg-surface-container-highest transition-all duration-300 group flex flex-col h-full"
                     >
-                        <div
-                            class="flex flex-col md:flex-row md:items-center justify-between gap-4"
-                        >
-                            <div>
-                                <h3 class="text-xl font-headline font-bold">
-                                    OCA/Reporting-Engine
-                                </h3>
-                                <p
-                                    class="text-sm text-on-surface-variant mt-1 font-body"
-                                >
-                                    Colaborador y Revisor
-                                </p>
-                            </div>
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="text-[10px] px-3 py-1 rounded-full bg-surface-variant text-primary border border-primary/20 font-label"
-                                    >XML-RPC</span
-                                >
-                                <span
-                                    class="text-[10px] px-3 py-1 rounded-full bg-surface-variant text-primary border border-primary/20 font-label"
-                                    >QWeb</span
-                                >
-                            </div>
+                        <div class="flex justify-between items-start mb-6">
+                            <span
+                                class="material-symbols-outlined text-primary text-4xl"
+                                translate="no"
+                                >integration_instructions</span
+                            >
+                            <span
+                                class="text-xs font-label bg-primary/10 text-primary px-3 py-1 rounded-full"
+                                >Colaborador</span
+                            >
                         </div>
+                        <h3
+                            class="text-2xl font-headline font-bold mb-2 group-hover:text-primary transition-colors"
+                        >
+                            OCA/Reporting-Engine
+                        </h3>
                         <p
-                            class="text-sm text-on-surface-variant mt-4 leading-relaxed max-w-3xl font-body"
+                            class="text-sm text-sky-300/80 mb-4 font-medium font-body"
+                        >
+                            Revisor Activo
+                        </p>
+                        <p
+                            class="text-on-surface-variant text-sm mb-4 leading-relaxed font-body"
                         >
                             Refactorización de los módulos de informes
                             principales para mejorar el rendimiento de la
@@ -201,38 +198,45 @@ import Footer from "../components/Footer.astro";
                             informes financieros complejos utilizados por la
                             Global Odoo Community Association.
                         </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span
+                                class="text-[10px] px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary font-label uppercase tracking-wider transition-all group-hover:border-primary/40 group-hover:shadow-[0_0_15px_rgba(59,130,246,0.2)]"
+                                >XML-RPC</span
+                            >
+                            <span
+                                class="text-[10px] px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary font-label uppercase tracking-wider transition-all group-hover:border-primary/40 group-hover:shadow-[0_0_15px_rgba(59,130,246,0.2)]"
+                                >QWeb</span
+                            >
+                        </div>
                     </div>
 
                     <!-- OS Project 2 -->
                     <div
-                        class="bg-surface-container p-6 rounded-xl border-l-4 border-primary/40 hover:bg-surface-bright transition-all"
+                        class="bg-surface-container-low p-6 rounded-xl hover:bg-surface-container-highest transition-all duration-300 group flex flex-col h-full"
                     >
-                        <div
-                            class="flex flex-col md:flex-row md:items-center justify-between gap-4"
-                        >
-                            <div>
-                                <h3 class="text-xl font-headline font-bold">
-                                    Odoo-Telegram-Connector
-                                </h3>
-                                <p
-                                    class="text-sm text-on-surface-variant mt-1 font-body"
-                                >
-                                    Líder de Proyecto
-                                </p>
-                            </div>
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="text-[10px] px-3 py-1 rounded-full bg-surface-variant text-primary border border-primary/20 font-label"
-                                    >Webhooks</span
-                                >
-                                <span
-                                    class="text-[10px] px-3 py-1 rounded-full bg-surface-variant text-primary border border-primary/20 font-label"
-                                    >Python-Telegram-Bot</span
-                                >
-                            </div>
+                        <div class="flex justify-between items-start mb-6">
+                            <span
+                                class="material-symbols-outlined text-primary text-4xl"
+                                translate="no"
+                                >forum</span
+                            >
+                            <span
+                                class="text-xs font-label bg-primary/10 text-primary px-3 py-1 rounded-full"
+                                >Autor Original</span
+                            >
                         </div>
+                        <h3
+                            class="text-2xl font-headline font-bold mb-2 group-hover:text-primary transition-colors"
+                        >
+                            Odoo-Telegram-Connector
+                        </h3>
                         <p
-                            class="text-sm text-on-surface-variant mt-4 leading-relaxed max-w-3xl font-body"
+                            class="text-sm text-sky-300/80 mb-4 font-medium font-body"
+                        >
+                            Líder de Proyecto
+                        </p>
+                        <p
+                            class="text-on-surface-variant text-sm mb-4 leading-relaxed font-body"
                         >
                             Creación de un módulo independiente para
                             notificaciones instantáneas de Odoo a través de
@@ -240,6 +244,16 @@ import Footer from "../components/Footer.astro";
                             para consultar el estado del inventario y aprobar
                             órdenes de compra de forma remota.
                         </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span
+                                class="text-[10px] px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary font-label uppercase tracking-wider transition-all group-hover:border-primary/40 group-hover:shadow-[0_0_15px_rgba(59,130,246,0.2)]"
+                                >Webhooks</span
+                            >
+                            <span
+                                class="text-[10px] px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary font-label uppercase tracking-wider transition-all group-hover:border-primary/40 group-hover:shadow-[0_0_15px_rgba(59,130,246,0.2)]"
+                                >Python-Telegram-Bot</span
+                            >
+                        </div>
                     </div>
                 </div>
             </section>
@@ -262,7 +276,7 @@ import Footer from "../components/Footer.astro";
                     escalable para tu empresa.
                 </p>
                 <button
-                    class="primary-gradient text-on-primary px-8 py-3 rounded-xl font-bold font-headline hover:scale-105 transition-transform"
+                    class="bg-surface-container-low border border-primary/30 text-on-surface px-8 py-3 rounded-xl font-bold font-headline transition-all hover:-translate-y-1 hover:bg-primary/10 hover:border-primary/50 hover:shadow-[0_0_25px_rgba(59,130,246,0.5)] active:scale-95"
                 >
                     Iniciar un Proyecto
                 </button>
